@@ -6,7 +6,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://satis.wbdevops.com/"
+      "url": "https://satis.wbdevops.com/"
     }
   ],
   "require": {

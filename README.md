@@ -1,6 +1,10 @@
 CHANGES
 -------
 
+2.0.8
+  * issue #1: Fix curl_setopt removed paramter.  see http://stackoverflow.com/questions/27939776/curlclosepolicy-least-recently-used-not-defined-anymore-in-php-5-6-4-is-it-bett
+
+
 2.0.7
 
     * Fixed issue with curl update (curl (7.22.0-3ubuntu4.8) precise-security; urgency=medium) where s3 communication
