@@ -27,6 +27,12 @@
  */
 class CacheAPC extends CacheCore
 {
+    /**
+     * Flag to determine the prefix of an APC function
+     *
+     * @var boolean
+     */
+    protected $apcFuncPrefix = 'apc';
 
 	/*%******************************************************************************************%*/
 	// CONSTRUCTOR
@@ -52,7 +58,9 @@ class CacheAPC extends CacheCore
 	public function __construct($name, $location, $expires)
 	{
 		parent::__construct($name, null, $expires);
+
 		$this->id = $this->name;
+		$this->apcFuncPrefix = function_exists('apcu_add') ? 'apcu' : 'apc';
 	}
 
 	/**
@@ -73,7 +81,8 @@ class CacheAPC extends CacheCore
 	 */
 	public function create($data)
 	{
-		return $this->apc('add', array($this->id, serialize($data), $this->expires));
+    	$apcMethod = $this->apcFuncPrefix.'_add';
+		return $apcMethod($this->id, serialize($data), $this->expires);
 	}
 
 	/**
@@ -91,7 +100,8 @@ class CacheAPC extends CacheCore
 	 */
 	public function read()
 	{
-		return unserialize($this->apc('fetch', array($this->id)));
+    	$apcMethod = $this->apcFuncPrefix.'_fetch';
+		return unserialize($apcMethod($this->id));
 	}
 
 	/**
@@ -112,7 +122,8 @@ class CacheAPC extends CacheCore
 	 */
 	public function update($data)
 	{
-		return $this->apc('store', array($this->id, serialize($data), $this->expires));
+    	$apcMethod = $this->apcFuncPrefix.'_store';
+		return $apcMethod($this->id, serialize($data), $this->expires);
 	}
 
 	/**
@@ -127,7 +138,8 @@ class CacheAPC extends CacheCore
 	 */
 	public function delete()
 	{
-		return $this->apc('delete', array($this->id));
+    	$apcMethod = $this->apcFuncPrefix.'_delete';
+		return $apcMethod($this->id);
 	}
 
 	/**
@@ -147,21 +159,5 @@ class CacheAPC extends CacheCore
 	{
 		return false;
 	}
-
-    /**
-     * @param string $callback
-     * @param string $parameters
-     *
-     * @return mixed
-     */
-    private function apc($callback, array $parameters = array())
-    {
-        $callback = function_exists('apcu_add')
-            ? 'apcu_'.$callback
-            : 'apc_'.$callback
-        ;
-
-        return call_user_func_array($callback, $parameters);
-    }
 }
 ?>
