@@ -1,6 +1,10 @@
 CHANGES
 -------
 
+2.0.9
+  * issue #2: Use `APCu` functions when available.
+
+
 2.0.8
   * issue #1: Fix curl_setopt removed paramter.  see http://stackoverflow.com/questions/27939776/curlclosepolicy-least-recently-used-not-defined-anymore-in-php-5-6-4-is-it-bett
 
