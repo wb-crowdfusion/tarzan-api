@@ -3,7 +3,7 @@
   <info>
     <title>Tarzan API</title>
     <provider>LifeNexus Digital, Inc.</provider>
-    <description>Tarzan is a fast, powerful PHP toolkit for building web applications with Amazon Web Services.</description>
+    <description>Tarzan is a fast, powerful PHP toolkit for building web applications with Amazon Web Services .</description>
     <priority>10</priority>
     <version>2.0.9</version>
   </info>
