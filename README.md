@@ -1,35 +1,19 @@
-CHANGES
--------
+tarzan-api
+=============
 
-2.0.9
-  * issue #2: Use `APCu` functions when available.
-
-
-2.0.8
-  * issue #1: Fix curl_setopt removed paramter.  see http://stackoverflow.com/questions/27939776/curlclosepolicy-least-recently-used-not-defined-anymore-in-php-5-6-4-is-it-bett
+Tarzan API provided as a CrowdFusion plugin.
 
 
-2.0.7
+## License
 
-    * Fixed issue with curl update (curl (7.22.0-3ubuntu4.8) precise-security; urgency=medium) where s3 communication
-      fails because the bucket vhost format sub.domain.com.s3.amazonaws.com fails the SSL check since even a wildcard
-      cert only functions on one level of sub domain.  The fix was to not prepend the bucket name (vhost style) and instead
-      use s3.amazonaws.com/BUCKETNAMEHERE/filename for all s3 operations.  ticket #166
+Copyright 2016 Warner Bros. Entertainment Inc. All rights reserved.
 
-  -- greg.brown May 05, 2014
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at <http://www.apache.org/licenses/LICENSE-2.0>
 
-
-2.0.6
-
-    * Fixed curl CURLOPT_SSL_VERIFYHOST deprecated issue..  ticket #149
-    * Modified API Version ticket #151
-    * Added Jimmy's changes for authenticate method
-
-  -- nick a 28 Jan 2014
-
-
-2.0.5
-
-    * initial versioned commit
-
-  -- rus  Fri, 4 Feb 2011 16:15 EST
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

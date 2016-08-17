@@ -17,10 +17,6 @@
  * 	APC - http://php.net/apc
  */
 
-
-/*%******************************************************************************************%*/
-// CLASS
-
 /**
  * Class: CacheAPC
  * 	Container for all APC-based cache methods. Inherits additional methods from CacheCore.
@@ -33,9 +29,6 @@ class CacheAPC extends CacheCore
      * @var boolean
      */
     protected $apcFuncPrefix = 'apc';
-
-	/*%******************************************************************************************%*/
-	// CONSTRUCTOR
 
 	/**
 	 * Method: __construct()
@@ -160,4 +153,3 @@ class CacheAPC extends CacheCore
 		return false;
 	}
 }
-?>

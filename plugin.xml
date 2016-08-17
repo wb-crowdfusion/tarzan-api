@@ -1,14 +1,11 @@
 <?xml version='1.0'?>
 <plugin>
-    <info>
-        <title>Tarzan API</title>
-        <provider>LifeNexus Digital, Inc.</provider>
-        <description>Tarzan is a fast, powerful PHP toolkit for building web applications with Amazon Web Services.</description>
-        <priority>10</priority>
-        <version>2.0.9</version>
-        <license>Simplified (aka "New") BSD license</license>
-        <cfversions>2.1.x</cfversions>
-        <homepage>http://tarzan-aws.com/</homepage>
-    </info>
+  <info>
+    <title>Tarzan API</title>
+    <provider>LifeNexus Digital, Inc.</provider>
+    <description>Tarzan is a fast, powerful PHP toolkit for building web applications with Amazon Web Services.</description>
+    <priority>10</priority>
+    <version>2.0.9</version>
+  </info>
 
 </plugin>

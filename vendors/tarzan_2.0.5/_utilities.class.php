@@ -5,13 +5,13 @@
  *
  * Version:
  * 	2008.12.18
- * 
+ *
  * Copyright:
  * 	2006-2009 LifeNexus Digital, Inc., and contributors.
- * 
+ *
  * License:
  * 	Simplified BSD License - http://opensource.org/licenses/bsd-license.php
- * 
+ *
  * See Also:
  * 	Tarzan - http://tarzan-aws.com
  */
@@ -29,10 +29,10 @@ class TarzanUtilities
 	/**
 	 * Method: __construct()
 	 * 	The constructor
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Returns:
 	 * 	<TarzanUtilities> object
 	 */
@@ -44,16 +44,16 @@ class TarzanUtilities
 	/**
 	 * Method: ready()
 	 * 	Check if a value (such as a GET or POST parameter or an array value) has a real, non-empty value.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	var - _array_ (Required) The value to check.
-	 * 
+	 *
 	 * Returns:
 	 * 	_boolean_ Whether this has a real value.
- 	 * 
+ 	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/ready.phps
 	 */
@@ -65,16 +65,16 @@ class TarzanUtilities
 	/**
 	 * Method: hex_to_base64()
 	 * 	Convert a HEX value to Base64.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	str - _string_ (Required) Value to convert.
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ Base64-encoded string.
- 	 * 
+ 	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/hex_to_base64.phps
 	 */
@@ -93,16 +93,16 @@ class TarzanUtilities
 	/**
 	 * Method: to_query_string()
 	 * 	Convert an associative array into a query string.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	array - _array_ (Required) Array to convert.
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ URL-friendly query string.
- 	 * 
+ 	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/to_query_string.phps
 	 */
@@ -121,16 +121,16 @@ class TarzanUtilities
 	/**
 	 * Method: to_signable_string()
 	 * 	Convert an associative array into a sign-able string.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	array - _array_ (Required) Array to convert.
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ URL-friendly sign-able string.
- 	 * 
+ 	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/to_signable_string.phps
 	 */
@@ -149,13 +149,13 @@ class TarzanUtilities
 	/**
 	 * Method: encode_signature2()
 	 * 	Encode the value according to RFC 3986.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	string - _string_ (Required) String to convert
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ URL-friendly sign-able string.
 	 */
@@ -168,16 +168,16 @@ class TarzanUtilities
 	/**
 	 * Method: query_to_array()
 	 * 	Convert a query string into an associative array. Multiple, identical keys will become an indexed array.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	qs - _string_ (Required) Query string to convert.
-	 * 
+	 *
 	 * Returns:
 	 * 	_array_ Associative array of keys and values.
-	 * 
+	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/query_to_array.phps
 	 */
@@ -210,18 +210,18 @@ class TarzanUtilities
 	/**
 	 * Method: size_readable()
 	 * 	Return human readable file sizes. Original function by Aidan Lister <mailto:aidan@php.net>, modified by Ryan Parman.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	size - _integer_ (Required) Filesize in bytes.
 	 * 	unit - _string_ (Optional) The maximum unit to use. Defaults to the largest appropriate unit.
 	 * 	retstring - _string_ (Optional) The format for the return string. Defaults to '%01.2f %s'
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ The human-readable file size.
-	 * 
+	 *
 	 * See Also:
 	 * 	Original Function - http://aidanlister.com/repos/v/function.size_readable.php
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/size_readable.phps
@@ -260,16 +260,16 @@ class TarzanUtilities
 	/**
 	 * Method: time_hms()
 	 * 	Convert a number of seconds into Hours:Minutes:Seconds.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	seconds - _integer_ (Required) The number of seconds to convert.
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ The formatted time.
-	 * 
+	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/time_hms.phps
 	 */
@@ -295,18 +295,18 @@ class TarzanUtilities
 	/**
 	 * Method: try_these()
 	 * 	Returns the first value that is set. Based on Try.these() from Prototype <http://prototypejs.org>.
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	attrs - _array_ (Required) The attributes to test, as strings. Intended for testing properties of the $base object, but also works with variables if you place an @ symbol at the beginning of the command.
 	 * 	base - _object_ (Optional) The base object to use, if any.
 	 * 	default - _mixed_ (Optional) What to return if there are no matches. Defaults to null.
-	 * 
+	 *
 	 * Returns:
 	 * 	_mixed_ Either a matching property of a given object, _boolean_ false, or any other data type you might choose.
-	 * 
+	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/try_these.phps
 	 */
@@ -339,19 +339,19 @@ class TarzanUtilities
 	/**
 	 * Method: json_encode()
 	 * 	Replicates json_encode() for versions of PHP 5 earlier than 5.2.
-	 * 
+	 *
 	 * Author:
 	 * 	http://us2.php.net/manual/en/function.json-encode.php#82904
-	 * 
+	 *
 	 * Access:
 	 * 	public
-	 * 
+	 *
 	 * Parameters:
 	 * 	obj - _mixed_ (Required) The PHP object to convert into a JSON string.
-	 * 
+	 *
 	 * Returns:
 	 * 	_string_ A JSON string.
-	 * 
+	 *
 	 * See Also:
 	 * 	Example Usage - http://tarzan-aws.com/docs/examples/utilities/json_encode.phps
 	 */
@@ -417,4 +417,3 @@ class TarzanUtilities
 		}
 	}
 }
-?>

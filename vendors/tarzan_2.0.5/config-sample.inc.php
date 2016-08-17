@@ -5,13 +5,13 @@
  *
  * Version:
  * 	2008.12.02
- * 
+ *
  * Copyright:
  * 	2006-2009 LifeNexus Digital, Inc., and contributors.
- * 
+ *
  * License:
  * 	Simplified BSD License - http://opensource.org/licenses/bsd-license.php
- * 
+ *
  * See Also:
  * 	Tarzan - http://tarzan-aws.com
  */
@@ -52,5 +52,3 @@ define('AWS_CANONICAL_ID', '');
  * 	Your CanonicalUser DisplayName. Used for setting access control settings in AmazonS3. Must be fetched from the server. Call print_r($s3->get_canonical_user_id()); to view.
  */
 define('AWS_CANONICAL_NAME', '');
-
-?>
