@@ -2103,4 +2103,3 @@ class AmazonS3 extends TarzanCore
 		);
 	}
 }
-?>

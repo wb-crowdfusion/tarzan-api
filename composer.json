@@ -3,12 +3,6 @@
   "type": "crowdfusion-plugin",
   "description": "Tarzan is a fast, powerful PHP toolkit for building web applications with Amazon Web Services.",
   "license": "Apache-2.0",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://satis.wbdevops.com/"
-    }
-  ],
   "require": {
     "php": ">=5.4",
     "wb-crowdfusion/crowdfusion": "~3.2"

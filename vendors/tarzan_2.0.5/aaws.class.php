@@ -1487,4 +1487,3 @@ class AmazonAAWS extends TarzanCore
 		return $this->authenticate('TransactionLookup', $opt, AAWS_LOCALE_US);
 	}
 }
-?>

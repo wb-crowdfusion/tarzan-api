@@ -823,5 +823,3 @@ class TarzanCore
 
 // Register the autoloader.
 spl_autoload_register(array('TarzanCore', 'autoloader'));
-
-?>
